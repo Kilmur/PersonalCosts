@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="497.0" prefWidth="380.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.SampleController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TableView layoutX="0.0" layoutY="0.0" prefHeight="496.9999000000025" prefWidth="379.9998779296875" fx:id="table">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="119.0" text="Дата" fx:id="columnDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="Тип затрат" fx:id="columnType" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="131.0" text="Затраты" fx:id="columnCost" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

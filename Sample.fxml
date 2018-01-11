@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox minHeight="266.0" minWidth="453.0" prefHeight="266.0" prefWidth="453.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.SampleController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane prefHeight="100.0" prefWidth="300.0">
+      <children>
+        <ChoiceBox fx:id="choiceList" layoutY="14.0" prefHeight="63.0" prefWidth="163.0" value="Продукты" AnchorPane.leftAnchor="20.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Продукты" />
+              <String fx:value="Квартира" />
+              <String fx:value="Обучение" />
+              <String fx:value="Развлечения" />
+              <String fx:value="Одежда" />
+              <String fx:value="Автомобиль" />
+              <String fx:value="Прочее" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+        <TextField fx:id="textField" layoutY="14.0" prefHeight="63.0" prefWidth="216.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="30.0" />
+      </children>
+    </AnchorPane>
+    <AnchorPane prefHeight="83.0" prefWidth="443.0">
+      <children>
+        <Button id="btnAdd" mnemonicParsing="false" onAction="#btnAdd" prefHeight="57.0" prefWidth="163.0" text="Добавить" textOverrun="ELLIPSIS" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="28.0" />
+      </children>
+    </AnchorPane>
+    <AnchorPane prefHeight="83.0" prefWidth="443.0">
+      <children>
+        <Button layoutY="12.0" mnemonicParsing="false" onAction="#btnTable" prefHeight="57.0" prefWidth="163.0" text="Таблица" AnchorPane.rightAnchor="263.0" />
+        <Button layoutY="12.0" mnemonicParsing="false" onAction="#btnChart" prefHeight="57.0" prefWidth="163.0" text="Диаграмма" AnchorPane.rightAnchor="28.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
