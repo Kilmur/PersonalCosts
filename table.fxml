@@ -5,14 +5,14 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="497.0" prefWidth="380.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.SampleController">
+<AnchorPane minHeight="300.0" minWidth="200.0" prefHeight="497.0" prefWidth="380.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.TableController">
   <!-- TODO Add Nodes -->
   <children>
-    <TableView layoutX="0.0" layoutY="0.0" prefHeight="496.9999000000025" prefWidth="379.9998779296875" fx:id="table">
+    <TableView fx:id="table" editable="false" minHeight="300.0" minWidth="200.0" prefHeight="497.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <columns>
-        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="119.0" text="Дата" fx:id="columnDate" />
-        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="Тип затрат" fx:id="columnType" />
-        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="131.0" text="Затраты" fx:id="columnCost" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="119.0" resizable="true" text="Дата" fx:id="columnDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" resizable="true" text="Тип затрат" fx:id="columnType" />
+        <TableColumn id="columnCost" maxWidth="5000.0" minWidth="10.0" prefWidth="131.0" resizable="true" text="Затраты" fx:id="columnCost" />
       </columns>
     </TableView>
   </children>

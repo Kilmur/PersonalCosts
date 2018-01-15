@@ -29,7 +29,7 @@ public class DB {
     private static ResultSet rs;
 
 //    Был конструктор. Сейчас заполняет list по вызову
-    public DB(){
+    public void getDB(){
         try {
             String sql = "SELECT * FROM test"; // дописать норм назв табл ! ! !
             con = DriverManager.getConnection(url, user, password);
