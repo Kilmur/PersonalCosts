@@ -7,7 +7,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 public class SampleController {
 
@@ -17,8 +16,6 @@ public class SampleController {
     ChoiceBox<String> choiceList;
     @FXML
     TextField textField;
-
-
 
 //             КНОПКА ДОБАВЛЕНИЯ
     public void btnAdd(ActionEvent actionEvent){
@@ -40,19 +37,12 @@ public class SampleController {
     }
 //                     КНОПКА ТАБЛИЦЫ
     public void btnTable(ActionEvent actionEvent){
-        new TableController().createWindow();
+        new TableController().createTableWindow();
     }
-
-
-
-
-
-
-
-
 
 //                      КНОПКА ДИАГРАММЫ
     public void btnChart(ActionEvent actionEvent){
+        new ChartController().createChartWindow();
 
     }
 

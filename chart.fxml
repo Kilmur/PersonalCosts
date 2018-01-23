@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ChartController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <BarChart fx:id="barChart" alternativeColumnFillVisible="false" barGap="0.0" categoryGap="0.0" legendVisible="false" prefHeight="450.0" prefWidth="550.0" title="Расходы по дням" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <xAxis>
+        <CategoryAxis fx:id="xAxis" autoRanging="true" endMargin="10.0" gapStartAndEnd="true" label="Дата" prefHeight="55.0" prefWidth="382.0" side="BOTTOM" startMargin="10.0" tickLabelGap="10.0" tickLabelRotation="-60.0" tickLength="0.0" tickMarkVisible="false" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis label="Расходы" prefHeight="365.0" prefWidth="69.0" side="LEFT" upperBound="10000.0" />
+      </yAxis>
+    </BarChart>
+  </children>
+</AnchorPane>

@@ -18,7 +18,6 @@ public class DB {
     ObservableList<Costs> list = FXCollections.observableArrayList();
     ArrayList<Costs> listNewCosts = new ArrayList<Costs>();
 
-//  jdbc:mysql://localhost/dbname?useUnicode=true&characterEncoding=utf8
     private static final String url = "jdbc:mysql://localhost:3306/db1?characterEncoding=utf8";
     private static final String user = "root";
     private static final String password = "fertan";
@@ -28,7 +27,7 @@ public class DB {
     private static PreparedStatement prstmt;
     private static ResultSet rs;
 
-//    Был конструктор. Сейчас заполняет list по вызову
+//    ЗАПОЛНЕНИЕ list.    сделать потом static вместе с листами
     public void getDB(){
         try {
             String sql = "SELECT * FROM test"; // дописать норм назв табл ! ! !
@@ -51,8 +50,8 @@ public class DB {
         }
     }
 
+//        СОХРАНЕНИЕ ДАННЫХ ПРИ ЗАКРЫТИИ
     public void closeWindow(){
-
         String sql = "INSERT INTO test (date, type, money) VALUES (?, ?, ?)";
         try {
             con = DriverManager.getConnection(url, user, password);
@@ -63,7 +62,6 @@ public class DB {
                 prstmt.setInt(3, list.getMoney());
                 prstmt.executeUpdate();
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }finally{

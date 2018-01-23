@@ -21,7 +21,6 @@ public class Main extends Application {
 			stage.setOnCloseRequest((WindowEvent we) -> {
 	            SampleController.db.closeWindow();
 	        });
-
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
